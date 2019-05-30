@@ -9,6 +9,17 @@ const getUserChoice = userInput => {
   if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb'){
     return userInput;
   }else{
-    return 'Please pick from the available options.'
+    return 'Please pick from the available options.';
+  }
+};
+
+const getComputerChoice = () => {
+  let randNum = Math.floor(Math.random()*3);
+  if(randNum === 0){
+    return 'rock';
+  }else if(randNum === 1){
+    return 'paper';
+  }else {
+    return 'scissors';
   }
 };
