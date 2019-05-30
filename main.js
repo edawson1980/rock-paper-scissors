@@ -54,3 +54,15 @@ const determineWinner = (userChoice, computerChoice) => {
     return 'Human Wins!';
   }
 };
+
+//play game
+const playGame = () => {
+  //determine variables for determineWinner
+  let userChoice = getUserChoice('rock');
+  let computerChoice = getComputerChoice();
+
+  console.log(`You played ${userChoice}`);
+  console.log(`Computer played ${computerChoice}`);
+
+  determineWinner(userChoice, computerChoice);
+};
