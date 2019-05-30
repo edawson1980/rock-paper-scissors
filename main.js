@@ -66,3 +66,5 @@ const playGame = () => {
 
   determineWinner(userChoice, computerChoice);
 };
+//actually play the game
+playGame();
