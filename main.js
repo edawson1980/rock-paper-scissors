@@ -23,3 +23,10 @@ const getComputerChoice = () => {
     return 'scissors';
   }
 };
+
+//find Winner
+const determineWinner = (userChoice, computerChoice) => {
+  if(userChoice === computerChoice){
+    return 'The game is a tie!';
+  }
+};
