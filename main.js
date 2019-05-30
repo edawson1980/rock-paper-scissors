@@ -29,4 +29,28 @@ const determineWinner = (userChoice, computerChoice) => {
   if(userChoice === computerChoice){
     return 'The game is a tie!';
   }
+  if(userChoice === 'rock'){
+    if(computerChoice === 'scissors'){
+      return 'Human wins!';
+    }else{
+      return 'Computer Wins!';
+    }
+  }
+  if(userChoice === 'paper'){
+    if(computerChoice === 'rock'){
+      return 'Human wins!';
+    }else{
+      return 'Computer Wins!';
+    }
+  }
+  if(userChoice === 'scissors'){
+    if(computerChoice === 'paper'){
+      return 'Human wins!';
+    }else{
+      return 'Computer Wins!';
+    }
+  }
+  if(userChoice === 'bomb'){
+    return 'Human Wins!';
+  }
 };
